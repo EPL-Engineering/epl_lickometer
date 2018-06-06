@@ -1,0 +1,6 @@
+
+This directory contains two files they are..
+
+MicAmp_v1-FrontPanel.pcb		- This PCB file contains a template for drilling the front panel for the microphone amplifier.
+MicAmp_v1-FrontPanel.frontsilk.gbr	- This file is in gerber format and is a template for drilling holes for the microphone amplifier. There is a black box in the file that should measure 1" x 1" if your printer is installed and calibrated correctly. It was generated from the PCB file.
+

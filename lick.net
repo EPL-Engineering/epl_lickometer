@@ -1,0 +1,5 @@
+Chassis	CONN1-4 CONN2-4 CONN1-3 CONN2-3 
+GND	C1-2 C2-1 V1-2 CONN1-2 Q1-S 
+unnamed_net3	CONN1-1 R2-1 Q1-D 
+unnamed_net2	CONN1-1 Q1-G Z1-1 R1-1 
+unnamed_net1	C1-1 V1-1 C2-2 Z1-2 R2-2 R1-2 

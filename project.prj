@@ -1,0 +1,3 @@
+elements-dir ./foot
+schematics lick.sch hidden-magic.sch
+output-name lick-art

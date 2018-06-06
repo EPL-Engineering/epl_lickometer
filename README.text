@@ -1,0 +1,51 @@
+
+File: README.text
+Eaton Peabody Lab
+2010.08.18
+Circuit by Senior Research Engineer Ishmael Stefanov-Wagner (ijs@epl.meei.harvard.edu)
+PCB artwork, documentation, and packaging by Evan Foss (evan_foss@meei.harvard.edu)
+
+Current Directory File List:
+
+Makefile			- This is the file I use to manage the project.
+gafrc				- This rc file is used by the geda suite to control some project specific paths and settings.
+gschemrc                        - This rc file is used by the gschem program to control some project specific paths and settings.
+sym/				- This is the directory with some of the symbols used in the project.
+MicAmp_v1.sch			- This is the main schematic for the project.
+MicAmp_v1.sch~			- This is temp copy of MicAmp_v1.sch.
+MicAmp_v1.ps			- This is a Postscript copy of the above file.
+hidden-magic.sch		- This is where I put all the things I can't easily/correctly depict graphically in the other schematic.
+hidden-magic.sch~		- This is the temp copy of hidden-magic.sch.
+hidden-magic.ps			- This is a Postscript copy of the above file.
+MicAmp_v1.prj			- This project file is used by gsch2pcb to create the PCB.
+foot/				- This is the directory with some of the footprints used in the project.
+MicAmp_v1.net			- This the project netlist.
+MicAmp_v1.cmd			- This is the pcb command file.
+MicAmp_v1.pcb			- This is the pcb file.
+MicAmp_v1.bom			- This is the BOM (Bill of Matterials) file generated automatically from the pcb via the project makefile
+MicAmp_v1.pcb.bak		- This is the pcb backup file.
+albertaprinted.vendor		- This vendor file is one I did for Alberta Printed Circuit.
+README.text			- This file.
+for alberta			- This directory has all the files you need to order printed circuit boards for this project from Alberta Printed Circuit but you have to follow their directions.
+front panel			- This directory contains a few files that you can use to machine the front panel for the microphone amplifier.
+
+Symbols: The symbols used in this project are a combination of light symbols from the gEDA set, gEDA Symbols site and heavy symbols my own creation. My symbols are all GPL2.
+
+Footprints: The footprints and the board they are used in are provided with no warrent of fitness for any PCB vendor other than APC. This is because do not have the time to check them with another services vendor drill file. 
+
+PCB: I need to write a larger document for those wanting to make changes. A few things I would like to quickly point out though is that the box around the outside of the board is for the PCB vendor to know the outline of the board. It was drawn with thin lines and will fail a drc but since it is not going to be fabricated that is irrelevant. If you want to make changes please do not change the front panel spacing of the MINI-DIN5, BNC or switch. I am trying to keep upgrading easier by reducing our machining needs. 
+
+for alberta:
+
+	Gerbers: The gerber and drill files were generated off the PCB file with the albertaprinted.vendor file applied.
+
+	Ordering: I don't know what the process is for your vendor of choice but we use Alberta Printed Circuit. If you use their service too you will need orderform.txt and probably to write a README.ME file. Please READ the vendors instructions for submitting orders. I have already left gerbers in that directory for you with the vendor drill mapping applied and the required boxes draw around each layer for the vendor to know the board outline. The PCB file there also has alberta's drill mapping applied and I left the fabrication gerber there. If you need it the script to rename all the gerbers is in both copies of the Makefile. The process you end up following should look something like this.
+		1) Download a copy of Alberta's order form.
+		2) Fill it out. (The board is 3.085x1.830)
+		3) Copy it to the for alberta folder.
+		4) Zip the folder and email/ftp/webapp send it to them.
+
+Last Minute Note: The Silkscreen lists an OPA134 when it should be updated to read LME49710.
+
+Last Minute Note: We have been shorting the chassis to analog ground in side the box with a very short fine wire. This is not ideal as they should only be connected at the power supply end but it reduces noise significantly. 
+

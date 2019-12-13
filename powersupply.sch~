@@ -1,4 +1,4 @@
-v 20150930 2
+v 20130925 2
 C 40000 40000 0 0 0 title-C.sym
 N 53700 51100 55300 51100 4
 {
@@ -119,11 +119,11 @@ symversion=0.1
 T 43700 48900 5 10 1 1 0 6 1
 refdes=C3
 T 43700 48700 5 10 1 1 0 6 1
-value=10uF
+value=100uF
 T 43700 48100 5 10 1 1 0 6 1
 footprint=rcy(100, bar-sign)
 T 43700 48300 5 10 1 1 0 6 1
-comment=UPW1E100MDD
+comment=P5138-ND
 T 43700 48500 5 10 1 1 0 6 1
 description=Electrolytic
 }
